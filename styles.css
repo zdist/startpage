@@ -1,0 +1,17 @@
+:root {
+    --bg-color: #293241;
+    --title-color: #ee6c4d;
+    --link-color: #3d5a80;
+    --link-color-visited: #98c1d9;
+    --link-color-hover: #e0fbfc;
+}
+
+html, body {
+    background: var(--bg-color);
+    color: var(--title-color);
+    font-family: "Space Mono", monospace;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+}
