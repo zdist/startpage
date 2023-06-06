@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const city = 'NYC';
   const language = 'en';
-  const format = '%C+(%f),+with+a+wind+of+%w+and+%p+of+rain.';
+  const format = '%C+(%f),+with+a+wind+of+%w.';
   const url = `https://wttr.in/${city}?format=${format}&lang=${language}`;
 
   fetch(url)
