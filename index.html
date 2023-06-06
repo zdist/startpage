@@ -16,8 +16,59 @@
         <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&family=Space+Mono&display=swap" rel="stylesheet">
     </head>
     <body>
-        <h1>Hello Zo 👋</h1>
-        <div id="featuredContainer">Blank</div>
+        <div id="fg-padding">
+            <div id="fg">
+                <h1>Hello Zo 👋</h1>
+                <div class="current">
+                    <div>
+                      <p>Right now it's <span id="time"></span> on <span id="date"></span>.</p>
+                    </div>
+                    <p id="weather"></p>
+                    <hr>
+                </div>
+                <div>
+                    <p id="contributions"></p>
+                </div>
+                <div id="newsContainer">
+                    <h4>Today's News</h4>
+                    <div id="featuredContainer"></div>
+                </div>
+                <h2>Today's Workout Routine</h2>
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn">Open Workout</button>
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close">&times;</span>
+                            <h2><span id="dayOfWeekModal"></span></h2>
+                        </div>
+                        <div class="modal-body">
+                            <h4 id="pushPullLeg"></h4>
+                            <p id="day-text"></p>
+                        </div>
+                        <div class="modal-footer">
+                            <h3>Motivational Quote</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
+    <!-- External Scripts: -->
     <script src="main.js"></script>
+    <script src="modal.js"></script>
+    <script src="timeDate.js"></script>
+    <script src="weather.js"></script>
+    <script src="contributions.js"></script>
+    <!-- r/startpages Inspiration: -->
+        <!-- u/LinkSake's Origami: https://www.reddit.com/r/startpages/comments/12bobou/my_first_custom_start_page/ -->
+        <!-- u/xkjlxkj's Simple: https://www.reddit.com/r/startpages/comments/xxi2nm/simple_startpage/ -->
+        <!-- u/butformexyz's Terminal: https://www.reddit.com/r/startpages/comments/1357nbs/terminalthemed_keyboardfocused_startpage/ -->
+        <!-- u/-Aporia's Multi: https://www.reddit.com/r/startpages/comments/13dardk/my_first_multi_theme_startpage/ -->
+        <!-- u/skearryw's SvelteKit: https://www.reddit.com/r/startpages/comments/zq0qri/my_startpage_made_with_sveltekit/ -->
+            <!-- How to get the Contributions: https://github.com/CatsJuice/ssr-contributions-img -->
+            <!-- Contributions Playground: https://contribution.catsjuice.com -->
 </html>

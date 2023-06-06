@@ -1,17 +1,162 @@
 :root {
-    --bg-color: #293241;
-    --title-color: #ee6c4d;
-    --link-color: #3d5a80;
-    --link-color-visited: #98c1d9;
-    --link-color-hover: #e0fbfc;
+    /* Color Pallet: https://coolors.co/palette/3d5a80-98c1d9-e0fbfc-ee6c4d-293241 */
+    --gh-dm-dark-blue: #0D1117; /* GitHub Dark Mode Dark Blue */
+    --fake-black: #293241; /* Nearly Black */
+    --orange: #ee6c4d; /* Orange */
+    --blue-gray: #3d5a80; /* Blue Gray */
+    --gray-blue: #98c1d9; /* Light Gray-ish Blue*/
+    --fake-white: #e0fbfc; /* Light Blue almost White */
+}
+
+html {
+    font-family: "Space Mono", monospace;
+    text-align: center;
+    color: var(--orange);
+    background-color: var(--gh-dm-dark-blue);
 }
 
 html, body {
-    background: var(--bg-color);
-    color: var(--title-color);
-    font-family: "Space Mono", monospace;
-    height: 100%;
-    width: 100%;
     margin: 0;
-    padding: 10px;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden; /* Make it not move when scrolling */
+}
+#fg-padding {
+    padding-top: 2vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    height: 96vh;
+}
+#fg {
+    min-height: 100%;
+    line-height: 1rem;
+    box-sizing: border-box; 
+    padding: 1rem; 
+    background-color: var(--fake-black);
+    border-radius: 10px;
+    text-align: left;
+}
+hr {
+    border: 2px solid var(--gray-blue);
+    border-radius: 2px;
+}
+#newsContainer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+h4 {
+    margin-bottom: 10px;
+    text-decoration: underline;
+    font-weight: bold;
+}
+ul {
+    /* list-style-type: none; */
+    margin-left: 10px;
+}
+li {
+    margin-bottom: 10px;
+}
+#myBtn {
+    color: var(--orange);
+    background-color: var(--fake-white);
+    font-size: 14px;
+    padding: 5px;
+    /* font-weight: bold; */
+    margin-left: 40px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+#myBtn:hover {
+    background-color: var(--blue-gray);
+    color: var(--fake-white);
+}
+
+/* == Workout Modal == */
+/* Inspiration: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_modal_bottom */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Make background darker */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: var(--fake-white);
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+    border-radius: 10px;
+}
+input[type="checkbox"] {
+    accent-color: var(--orange)
+}
+/* The Close Button */
+.close {
+    color: var(--orange);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+.close:hover, .close:focus {
+    color: var(--gray-blue);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: var(--gh-dm-dark-blue);
+    color: var(--fake-white);
+    border-radius: 10px 10px 0 0;
+}
+
+.modal-body {
+    padding: 2px 16px;
+    border-radius: 10px;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: var(--gh-dm-dark-blue);
+    color: var(--fake-white);
+    border-radius: 0 0 10px 10px;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
 }
