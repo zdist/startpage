@@ -3,7 +3,7 @@
 ### ⚠️ Work In Progress ⚠️
 **Inspiration:** <a href="https://www.reddit.com/r/startpages/">r/startpages</a> on Reddit
 
-Created this to add as my default start page when I open a new window/tab in my broswer. Idealey it'll have everything I need on it.
+Created this to add as my default start page when I open a new window/tab in my broswer. Ideally it'll have everything I need on it.
 
 #### Features to include:
 - [x] Personalized Greeting
