@@ -13,6 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     })
     .catch(error => {
       const weatherElement = document.getElementById('weather');
-      weatherElement.textContent = "idk ¯\_(ツ)_/¯ Go outside and find out..."
+      weatherElement.textContent = "idk ¯\_(ツ)_/¯ go outside and find out..."
     });
 });
