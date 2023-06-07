@@ -1,18 +1,18 @@
 :root {
     /* Color Pallet: https://coolors.co/palette/3d5a80-98c1d9-e0fbfc-ee6c4d-293241 */
-    --gh-dm-dark-blue: #0D1117; /* GitHub Dark Mode Dark Blue */
-    --fake-black: #293241; /* Nearly Black */
+    --background: #0D1117; /* GitHub Dark Mode Dark Blue */
+    --foreground: #293241; /* Nearly Black */
     --orange: #ee6c4d; /* Orange */
     --blue-gray: #3d5a80; /* Blue Gray */
     --gray-blue: #98c1d9; /* Light Gray-ish Blue*/
-    --fake-white: #e0fbfc; /* Light Blue almost White */
+    --accent: #e0fbfc; /* Light Blue almost White */
 }
 
 html {
     font-family: "Space Mono", monospace;
     text-align: center;
     color: var(--orange);
-    background-color: var(--gh-dm-dark-blue);
+    background-color: var(--background);
 }
 
 html, body {
@@ -32,7 +32,7 @@ html, body {
     line-height: 1.6rem;
     box-sizing: border-box; 
     padding: 1rem; 
-    background-color: var(--fake-black);
+    background-color: var(--foreground);
     border-radius: 10px;
     text-align: left;
 }
@@ -57,8 +57,8 @@ li {
     margin-bottom: 10px;
 }
 #myBtn {
-    color: var(--orange);
-    background-color: var(--fake-white);
+    color: var(--accent);
+    background-color: var(--orange);
     font-size: 14px;
     padding: 5px;
     /* font-weight: bold; */
@@ -68,8 +68,8 @@ li {
     cursor: pointer;
 }
 #myBtn:hover {
-    background-color: var(--blue-gray);
-    color: var(--fake-white);
+    background-color: var(--orange);
+    color: var(--accent);
 }
 
 /* == Workout Modal == */
@@ -95,7 +95,7 @@ li {
 .modal-content {
     position: fixed;
     bottom: 0;
-    background-color: var(--fake-white);
+    background-color: var(--accent);
     width: 100%;
     -webkit-animation-name: slideIn;
     -webkit-animation-duration: 0.4s;
@@ -123,8 +123,8 @@ input[type="checkbox"] {
 
 .modal-header {
     padding: 2px 16px;
-    background-color: var(--gh-dm-dark-blue);
-    color: var(--fake-white);
+    background-color: var(--background);
+    color: var(--accent);
     border-radius: 10px 10px 0 0;
 }
 
@@ -135,8 +135,8 @@ input[type="checkbox"] {
 
 .modal-footer {
     padding: 2px 16px;
-    background-color: var(--gh-dm-dark-blue);
-    color: var(--fake-white);
+    background-color: var(--background);
+    color: var(--accent);
     border-radius: 0 0 10px 10px;
 }
 
