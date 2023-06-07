@@ -27,11 +27,11 @@ window.onclick = function(event) {
 document.addEventListener("DOMContentLoaded", () => {
     const date = document.querySelector("#date");
 
-    updateTime(date);
-    setInterval(() => updateTime(date), 10000);
+    updateDate(date);
+    setInterval(() => updateDate(date), 10000);
 });
 
-const updateTime = (date) => {
+const updateDate = (date) => {
     var now = new Date();
 
     const dateFormatter = new Intl.DateTimeFormat("en-UK", {
