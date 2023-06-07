@@ -68,8 +68,8 @@ li {
     cursor: pointer;
 }
 #myBtn:hover {
-    background-color: var(--orange);
-    color: var(--accent);
+    color: var(--orange);
+    background-color: var(--accent);
 }
 
 /* == Workout Modal == */
