@@ -16,6 +16,8 @@ Created this to add as my default start page when I open a new window/tab in my 
 
 - [x] Have personalized workout routine for the day
 
+- [ ] Implement AQI (Air Quality Index)
+
 - [ ] Have my most visited sites shown in designated sections 
 
 - [ ] Have a motivational quote at the bottom depending on the day
@@ -23,7 +25,5 @@ Created this to add as my default start page when I open a new window/tab in my 
 - [ ] Implement <a href="https://en.m.wikipedia.org/wiki/Main_Page">Wikipedia's Main Page</a> "In the news" features section (use their <a href="https://api.wikimedia.org/wiki/API_reference/Feed/Featured_content">API</a>)
 
 <img src="https://github.com/zdisanto/startpage/assets/70993217/3a396300-a722-4cea-b00d-6608df97dcf4" style="width:800px;"/>
-
-
 
 - [ ] Implement a view of my GitHub contributions at the bottom of the page
