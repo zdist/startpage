@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(() => updateTime(date, time), 10000);
 });
   
-const updateTime = (date, time) => {
+updateTime = (date, time) => {
     const now = new Date();
         
     const dateFormatter = new Intl.DateTimeFormat("en-UK", {
